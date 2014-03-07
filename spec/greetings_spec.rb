@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe "Greetings" do
   it 'asks the user for their name and outputs the customized greeting' do
-    pending
     # this is the same as typing `ruby bin/greetings.rb` at the command line
     run_script("greetings.rb")
     type("Mike")
