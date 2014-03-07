@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe "RomanNumerals" do
   it "converts a single digit number to traditional roman numeral" do
-    pending
     run_script("roman_numerals.rb")
     type("5")
 

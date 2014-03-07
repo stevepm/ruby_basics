@@ -2,7 +2,6 @@ require 'spec_helper'
 
 describe "WallBeer" do
   it "prints out the first verse for 99 bottles of beer on the wall, when told to 'sing' with 99" do
-    pending
     run_script("wall_beer.rb")
     type("sing 99")
 
@@ -11,7 +10,6 @@ describe "WallBeer" do
   end
 
   it "throws an error if it does not know how many number of bottles" do
-    pending
     run_script("wall_beer.rb")
     type("sing")
 
@@ -20,7 +18,6 @@ describe "WallBeer" do
   end
 
   it "responds with 'Fine, don't listen to my song.', when told anything else besides 'sing''" do
-    pending
     run_script("wall_beer.rb")
     type("I don't want to hear you sing")
 
@@ -29,7 +26,6 @@ describe "WallBeer" do
   end
 
   it "prints out the lyrics for the rest of the verses, except 2-0, when told to sing" do
-    pending
     run_script("wall_beer.rb")
     type("sing 8")
 
@@ -38,7 +34,6 @@ describe "WallBeer" do
   end
 
   it "prints out the lyrics for 2 bottles of beer, when told to sing" do
-    pending
     run_script("wall_beer.rb")
     type("sing 2")
 
@@ -47,7 +42,6 @@ describe "WallBeer" do
   end
 
   it "prints out the lyrics for 1 bottles of beer, when told to sing" do
-    pending
     run_script("wall_beer.rb")
     type("sing 1")
 
@@ -56,7 +50,6 @@ describe "WallBeer" do
   end
 
   it "prints out the lyrics for no bottles of beer, when told to sing and there is no more beer left" do
-    pending
     run_script("wall_beer.rb")
     type("sing 0")
 
