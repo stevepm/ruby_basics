@@ -43,5 +43,5 @@ else
   puts "Please enter a number greater than 0"
 end
 
-puts "36 is equal to " + valueArray.join
+puts "#{number} is equal to " + valueArray.join
 
