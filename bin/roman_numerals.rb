@@ -1,4 +1,4 @@
-romans = {
+ROMANS = {
   1   => "I",
   4   => "IV",
   5   => "V",
@@ -20,7 +20,7 @@ x = number
 keyArray = []
 valueArray = []
 numValue = nil
-romans.each do |key, value|
+ROMANS.each do |key, _|
   keyArray = keyArray.push(key)
 end
 
@@ -30,7 +30,7 @@ if x > 0
   while x > 0
     keyArray.each do |num|
       if x >= num
-        valueArray = valueArray.push(romans[num])
+        valueArray = valueArray.push(ROMANS[num])
         numValue = num
         break
       end
