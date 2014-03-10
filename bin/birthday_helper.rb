@@ -4,7 +4,7 @@ require 'date'
 people = []
 n = 0
 
-CSV.foreach(Dir.pwd + "/bin/birthday_data.csv") do |col|
+CSV.foreach("/Users/stevenmagelowitz/gSchoolWork/ruby_basics/bin/birthday_data.csv") do |col|
   if n > 0
     people << [col[1].to_s.strip, col[0].to_s.strip, col[2].to_s.strip, col[3].to_s.strip]
   end
