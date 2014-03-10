@@ -32,5 +32,12 @@ describe "RomanNumerals" do
     expect(all_output).to include("MCDLXVIII")
     expect(all_output).to_not match("CCLVII")
   end
+
+  it "converts 1500 properly into roman numerals" do
+    run_script("roman_numerals.rb")
+    type("1500")
+
+    expect(all_output).to include("MD")
+  end
 end
 

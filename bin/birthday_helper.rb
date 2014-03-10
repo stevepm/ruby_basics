@@ -18,7 +18,7 @@ def search_for_a_name(name, people)
   if name_array.length == 1
     people.each do |person|
       if name_array[0] == person[0] || name_array[0] == person[1]
-        puts "#{Date.parse(person[2]).strftime("%B %-d, %Y")}, #{(DateTime.now.mjd - DateTime.parse(person[2]).mjd) / 365} years old"
+        puts "#{Date.parse(person[2]).strftime("%B %-d, %Y")}, #{((DateTime.now.mjd - DateTime.parse(person[2]).mjd) / 365.25).to_i} years old"
         displayed = true
       end
     end
@@ -28,7 +28,7 @@ def search_for_a_name(name, people)
   elsif name_array.length == 2
     people.each do |person|
       if name_array[0] == person[0] && name_array[1] == person[1]
-        puts "#{Date.parse(person[2]).strftime("%B %-d, %Y")}, #{(DateTime.now.mjd - DateTime.parse(person[2]).mjd) / 365} years old"
+        puts "#{Date.parse(person[2]).strftime("%B %-d, %Y")}, #{((DateTime.now.mjd - DateTime.parse(person[2]).mjd) / 365.25).to.i} years old"
         displayed = true
       end
     end
