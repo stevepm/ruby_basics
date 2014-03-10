@@ -11,10 +11,6 @@ CSV.foreach("/Users/stevenmagelowitz/gSchoolWork/ruby_basics/bin/birthday_data.c
   n += 1
 end
 
-#people.each do |person|
-#  puts (DateTime.now.mjd - DateTime.parse(person[2]).mjd) / 365
-#end
-
 
 def search_for_a_name(name, people)
   displayed = false
